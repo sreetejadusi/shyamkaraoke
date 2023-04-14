@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Ambit;
+        font-weight: 400;
+        src: url(./fonts/Ambit-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Ambit;
+        font-weight: 100;
+        src: url(./fonts/Ambit-Light.ttf);
+    }
+
+    @font-face {
+        font-family: Ambit;
+        font-weight: 900;
+        src: url(./fonts/Ambit-SemiBold.ttf);
+    }
+
+    @font-face {
+        font-family: Hind;
+        font-weight: 400;
+        src: url(./fonts/Hind-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Script;
+        font-weight: 400;
+        src: url(./fonts/IntroScript-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Script;
+        font-weight: 900;
+        src: url(./fonts/IntroScript-Medium.ttf);
+    }
+
+    html {
+        font-family: Ambit;
+    }
+    ::selection{
+        background-color: #fab8137c;
+        color: white;
+    }
+}
