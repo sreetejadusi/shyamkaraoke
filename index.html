@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="build.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -14,46 +14,47 @@
 
 <body class="h-screen bg-[url('/assets/path.png')] bg-bottom bg-cover bg-no-repeat">
     <header class="p-4">
-        <div class="flex justify-between">
-            <div class="w-fit"></div>
-            <a href="/">
-                <div class="flex items-end ml-40">
-                    <img src="./assets/logo_shyamkaraoke.png" alt="logo" class="w-8">
-                    <h2 class="text-2xl">Shyam Karaoke's</h2>
+        <div class="grid grid-cols-3 row-auto">
+            <a href="/" class="col-span-2 text-end">
+                <div>
+                    <img src="./assets/logo_shyamkaraoke.png" alt="logo" class="w-8 sm:w-12 inline-block">
+                    <h2 class="text-lg sm:text-xl inline-block">Shyam Karaoke's</h2>
                 </div>
             </a>
-            <div class="inline-flex items-center">
+            <div class="text-end hidden sm:block">
                 <a href="/faq/">
-                    <h3 class="pr-6 hover:text-theme duration-200">FAQ</h3>
+                    <h3 class="pr-6 hover:text-theme duration-200 inline-block">FAQ</h3>
                 </a>
                 <a href="/contact/">
-                    <h3 class="pl-6 hover:text-theme duration-200">Contact</h3>
+                    <h3 class="pl-6 hover:text-theme duration-200 inline-block">Contact</h3>
                 </a>
             </div>
         </div>
     </header>
     <div class="grid grid-cols-3 px-16">
         <div class="col-span-2">
-            <div class="flex justify-start items-center text-center h-max">
-                <img src="./assets/logo_swaralaya.png" alt="swaralaya" class="w-72 rounded-full">
-                <div class="text-left">
-                    <h1 class="text-8xl" style="font-family: Dancing Script;">Swaralaya</h1>
-                    <h2 class="text-4xl" style="font-family: Dancing Script;">Sing your heart out...</h2>
+            <div class="text-center h-max">
+                <img src="./assets/logo_swaralaya.png" alt="swaralaya"
+                    class="w-64 sm:w-72 rounded-full inline-block">
+                <div class="text-left inline-block">
+                    <h1 class="text-6xl sm:text-8xl" style="font-family: Dancing Script;">Swaralaya</h1>
+                    <h2 class="text-2xl sm:text-4xl" style="font-family: Dancing Script;">Sing your heart out...</h2>
                 </div>
             </div>
             <div>
                 <a href="https://play.google.com/store/apps/details?id=com.app.swaralaya" target="_blank"><img
-                        src="./assets/google_play.svg" alt="google_play" class="w-52 h-auto mx-32 my-6"></a>
+                        src="./assets/google_play.svg" alt="google_play" class="w-52 h-auto my-6 sm:mx-32"></a>
             </div>
             <div class="text-right">
-                <h3 class="font-[Hind] font-bold text-5xl leading-snug opacity-50">“शोभिल्लु सप्तस्वर |<br>सुँदरुल
+                <h3 class="font-[Hind] font-bold text-5xl hidden sm:block leading-snug opacity-50">“शोभिल्लु सप्तस्वर |<br>सुँदरुल
                     भजिम्पावे मनसा
                     ||”</h3>
             </div>
         </div>
-        <div class="col-span-1 h-full flex justify-end items-end">
-            <img src="./assets/girl_singing.png" alt="girl_singing" class="w-10/12">
-        </div>
+        
+    </div>
+    <div class="absolute bottom-0 right-0 justify-end items-start">
+        <img src="./assets/girl_singing.png" alt="girl_singing" class="w-40 sm:w-80">
     </div>
     <footer class="flex absolute w-full bottom-0 justify-between px-4 py-2">
         <div>
